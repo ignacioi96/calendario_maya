@@ -6,7 +6,7 @@ import datetime
 # Correct Guatemalan Mayan Tzolk'in day names (day protectors)
 day_protectors = [
     "Imox", "Iq'", "Aq'ab'al", "Kat", "Kan", "Kame", "Kej", "Q'anil", 
-    "Toj", "Tz'i'", "B'atz'", "E", "Aj", "Ix", "Tz'ikin", "Ajmaq", 
+    "Toj", "Tz'i'", "Chooj", "E", "Aj", "Ix", "Tz'ikin", "Ajmaq", 
     "No'j", "Tijax", "Kawoq", "Ajpu"
 ]
 
