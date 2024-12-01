@@ -5,9 +5,9 @@ import datetime
 
 # Correct Guatemalan Mayan Tzolk'in day names (day protectors)
 day_protectors = [
-    "Imox", "Iq'", "Aq'ab'al", "Kat", "Kan", "Kame", "Kej", "Q'anil", 
-    "Toj", "Tz'i'", "Chooj", "E", "Aj", "Ix", "Tz'ikin", "Ajmaq", 
-    "No'j", "Tijax", "Kawoq", "Ajpu"
+    "Imox", "Iq'", "Ak'ab'al", "K'at", "Kan", "Keme", "Kiej", "Q'anil", 
+    "Toj", "Tz'i'", "B'atz'", "E", "Aj", "I'x", "Tz'ikin", "Ajmaq", 
+    "N'oj", "Tijax", "Kawok", "Ajpu"
 ]
 
 # Start and end dates for the calendar
@@ -41,7 +41,7 @@ current_date = start_date
 while current_date <= end_date:
     tzolkin_number, tzolkin_protector = get_mayan_date(current_date)
     event = Event()
-    event.add('summary', f'Nahual del día: {tzolkin_number} {tzolkin_protector}')
+    event.add('summary', f"{tzolkin_number} {tzolkin_protector} es el Cholq'ij del día")
     event.add('dtstart', current_date)
     event.add('dtend', current_date + datetime.timedelta(days=1))
     event.add('description', f'El Tzolk\'in Maya para el día de hoy es {tzolkin_number} {tzolkin_protector}.')
